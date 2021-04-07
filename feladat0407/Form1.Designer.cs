@@ -42,10 +42,12 @@
             this.osztásToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.kilépésToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.button2 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.nValasz = new System.Windows.Forms.NumericUpDown();
+            this.contextMenuStrip2 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.menuStrip2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nValasz)).BeginInit();
             this.SuspendLayout();
             // 
             // lbMuvelet
@@ -75,12 +77,13 @@
             this.btEllenoriz.TabIndex = 2;
             this.btEllenoriz.Text = "Ellenőriz";
             this.btEllenoriz.UseVisualStyleBackColor = true;
+            this.btEllenoriz.Click += new System.EventHandler(this.btEllenoriz_Click);
             // 
             // menuStrip1
             // 
             this.menuStrip1.Location = new System.Drawing.Point(0, 24);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(530, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(598, 24);
             this.menuStrip1.TabIndex = 3;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -91,7 +94,7 @@
             this.kilépésToolStripMenuItem});
             this.menuStrip2.Location = new System.Drawing.Point(0, 0);
             this.menuStrip2.Name = "menuStrip2";
-            this.menuStrip2.Size = new System.Drawing.Size(530, 24);
+            this.menuStrip2.Size = new System.Drawing.Size(598, 24);
             this.menuStrip2.TabIndex = 5;
             this.menuStrip2.Text = "menuStrip2";
             // 
@@ -135,6 +138,7 @@
             this.osztásToolStripMenuItem.Name = "osztásToolStripMenuItem";
             this.osztásToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.osztásToolStripMenuItem.Text = "Osztás";
+            this.osztásToolStripMenuItem.Click += new System.EventHandler(this.osztásToolStripMenuItem_Click);
             // 
             // kilépésToolStripMenuItem
             // 
@@ -150,13 +154,6 @@
             this.button2.TabIndex = 9;
             this.button2.Text = "Következő";
             this.button2.UseVisualStyleBackColor = true;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(237, 71);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(84, 20);
-            this.textBox1.TabIndex = 10;
             // 
             // listBox1
             // 
@@ -175,14 +172,26 @@
             this.label1.TabIndex = 16;
             this.label1.Text = "Feladat:";
             // 
+            // nValasz
+            // 
+            this.nValasz.Location = new System.Drawing.Point(213, 71);
+            this.nValasz.Name = "nValasz";
+            this.nValasz.Size = new System.Drawing.Size(120, 20);
+            this.nValasz.TabIndex = 17;
+            // 
+            // contextMenuStrip2
+            // 
+            this.contextMenuStrip2.Name = "contextMenuStrip2";
+            this.contextMenuStrip2.Size = new System.Drawing.Size(61, 4);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(530, 312);
+            this.ClientSize = new System.Drawing.Size(598, 312);
+            this.Controls.Add(this.nValasz);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.listBox1);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btEllenoriz);
             this.Controls.Add(this.lbEredmeny);
@@ -194,6 +203,7 @@
             this.Text = "Form1";
             this.menuStrip2.ResumeLayout(false);
             this.menuStrip2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nValasz)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -214,9 +224,10 @@
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem kilépésToolStripMenuItem;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.NumericUpDown nValasz;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip2;
     }
 }
 
