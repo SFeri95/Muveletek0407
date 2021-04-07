@@ -32,7 +32,6 @@
             this.lbMuvelet = new System.Windows.Forms.Label();
             this.lbEredmeny = new System.Windows.Forms.Label();
             this.btEllenoriz = new System.Windows.Forms.Button();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.menuStrip2 = new System.Windows.Forms.MenuStrip();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
@@ -41,11 +40,12 @@
             this.szorzásToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.osztásToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.kilépésToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.button2 = new System.Windows.Forms.Button();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.btKovetkezo = new System.Windows.Forms.Button();
+            this.lbfeladat = new System.Windows.Forms.Label();
             this.contextMenuStrip2 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.tbEredmeny = new System.Windows.Forms.TextBox();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.libTeljesitmeny = new System.Windows.Forms.ListBox();
             this.menuStrip2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -77,14 +77,6 @@
             this.btEllenoriz.Text = "Ellenőriz";
             this.btEllenoriz.UseVisualStyleBackColor = true;
             this.btEllenoriz.Click += new System.EventHandler(this.btEllenoriz_Click);
-            // 
-            // menuStrip1
-            // 
-            this.menuStrip1.Location = new System.Drawing.Point(0, 24);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(598, 24);
-            this.menuStrip1.TabIndex = 3;
-            this.menuStrip1.Text = "menuStrip1";
             // 
             // menuStrip2
             // 
@@ -145,31 +137,23 @@
             this.kilépésToolStripMenuItem.Size = new System.Drawing.Size(56, 20);
             this.kilépésToolStripMenuItem.Text = "Kilépés";
             // 
-            // button2
+            // btKovetkezo
             // 
-            this.button2.Location = new System.Drawing.Point(357, 117);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 9;
-            this.button2.Text = "Következő";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btKovetkezo.Location = new System.Drawing.Point(357, 117);
+            this.btKovetkezo.Name = "btKovetkezo";
+            this.btKovetkezo.Size = new System.Drawing.Size(75, 23);
+            this.btKovetkezo.TabIndex = 9;
+            this.btKovetkezo.Text = "Következő";
+            this.btKovetkezo.UseVisualStyleBackColor = true;
             // 
-            // listBox1
+            // lbfeladat
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(49, 117);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(273, 134);
-            this.listBox1.TabIndex = 15;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 71);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(45, 13);
-            this.label1.TabIndex = 16;
-            this.label1.Text = "Feladat:";
+            this.lbfeladat.AutoSize = true;
+            this.lbfeladat.Location = new System.Drawing.Point(13, 72);
+            this.lbfeladat.Name = "lbfeladat";
+            this.lbfeladat.Size = new System.Drawing.Size(45, 13);
+            this.lbfeladat.TabIndex = 16;
+            this.lbfeladat.Text = "Feladat:";
             // 
             // contextMenuStrip2
             // 
@@ -183,15 +167,31 @@
             this.tbEredmeny.Size = new System.Drawing.Size(100, 20);
             this.tbEredmeny.TabIndex = 19;
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Location = new System.Drawing.Point(0, 24);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(598, 24);
+            this.menuStrip1.TabIndex = 3;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // libTeljesitmeny
+            // 
+            this.libTeljesitmeny.FormattingEnabled = true;
+            this.libTeljesitmeny.Location = new System.Drawing.Point(49, 117);
+            this.libTeljesitmeny.Name = "libTeljesitmeny";
+            this.libTeljesitmeny.Size = new System.Drawing.Size(273, 134);
+            this.libTeljesitmeny.TabIndex = 15;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(598, 312);
             this.Controls.Add(this.tbEredmeny);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.listBox1);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.lbfeladat);
+            this.Controls.Add(this.libTeljesitmeny);
+            this.Controls.Add(this.btKovetkezo);
             this.Controls.Add(this.btEllenoriz);
             this.Controls.Add(this.lbEredmeny);
             this.Controls.Add(this.lbMuvelet);
@@ -212,7 +212,6 @@
         private System.Windows.Forms.Label lbMuvelet;
         private System.Windows.Forms.Label lbEredmeny;
         private System.Windows.Forms.Button btEllenoriz;
-        private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.MenuStrip menuStrip2;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem összeadásToolStripMenuItem;
@@ -221,11 +220,12 @@
         private System.Windows.Forms.ToolStripMenuItem osztásToolStripMenuItem;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem kilépésToolStripMenuItem;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btKovetkezo;
+        private System.Windows.Forms.Label lbfeladat;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip2;
         private System.Windows.Forms.TextBox tbEredmeny;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ListBox libTeljesitmeny;
     }
 }
 

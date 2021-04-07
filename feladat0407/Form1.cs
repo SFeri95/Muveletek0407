@@ -14,8 +14,8 @@ namespace feladat0407
     {
         int oszto;
         int osztando; 
-        int eredmeny; 
-
+        int eredmeny;
+        Random r = new Random();
         public Form1()
         {
             InitializeComponent();
@@ -38,12 +38,14 @@ namespace feladat0407
 
         private void osztásToolStripMenuItem_Click(object sender, EventArgs e)
         {
+  
+              
+            eredmeny = r.Next(1, 10);
+            oszto = r.Next(1, 10);
+            osztando = eredmeny * oszto;
 
-             oszto = 5;
-             osztando = 10;
-             eredmeny = osztando / oszto;
-             lbMuvelet.Text = $"{osztando}/{oszto}";
-        
+            lbMuvelet.Text = $"{osztando}/{oszto}";
+
         }
 
         private void btEllenoriz_Click(object sender, EventArgs e)
