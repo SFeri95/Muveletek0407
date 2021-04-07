@@ -1,0 +1,10 @@
+C:\Users\FreakyFred\source\repos\feladat0407\feladat0407\bin\Debug\feladat0407.exe.config
+C:\Users\FreakyFred\source\repos\feladat0407\feladat0407\bin\Debug\feladat0407.exe
+C:\Users\FreakyFred\source\repos\feladat0407\feladat0407\bin\Debug\feladat0407.pdb
+C:\Users\FreakyFred\source\repos\feladat0407\feladat0407\obj\Debug\feladat0407.csprojAssemblyReference.cache
+C:\Users\FreakyFred\source\repos\feladat0407\feladat0407\obj\Debug\feladat0407.Form1.resources
+C:\Users\FreakyFred\source\repos\feladat0407\feladat0407\obj\Debug\feladat0407.Properties.Resources.resources
+C:\Users\FreakyFred\source\repos\feladat0407\feladat0407\obj\Debug\feladat0407.csproj.GenerateResource.cache
+C:\Users\FreakyFred\source\repos\feladat0407\feladat0407\obj\Debug\feladat0407.csproj.CoreCompileInputs.cache
+C:\Users\FreakyFred\source\repos\feladat0407\feladat0407\obj\Debug\feladat0407.exe
+C:\Users\FreakyFred\source\repos\feladat0407\feladat0407\obj\Debug\feladat0407.pdb
