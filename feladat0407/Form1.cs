@@ -42,15 +42,15 @@ namespace feladat0407
              oszto = 5;
              osztando = 10;
              eredmeny = osztando / oszto;
-            lbMuvelet.Text = $"{osztando}/{oszto}";
+             lbMuvelet.Text = $"{osztando}/{oszto}";
         
         }
 
         private void btEllenoriz_Click(object sender, EventArgs e)
         {
 
-            if (nValasz.Value == eredmeny)
-            {
+            if (tbEredmeny.Text.Equals(eredmeny.ToString()))
+            { 
                 lbEredmeny.Text = "A megoldás jó";
             }
             else
